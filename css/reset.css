@@ -74,3 +74,6 @@ main, nav, header, footer, section, article, aside, dialog, figure, menu ,img{
     white-space:nowrap;
     -webkit-box-orient: vertical;
 }
+.clearB{
+	clear: both;
+}

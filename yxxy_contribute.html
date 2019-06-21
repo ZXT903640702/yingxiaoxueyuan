@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>我要投稿</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/global.css"/>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/mine.css"/>
+		<link rel="stylesheet" href="css/xueyuan.css" />
+		<script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>
+		<script type="text/javascript">
+			$(function(){	
+				$('.phb-top ul li').click(function(){
+					$(this).addClass('hit').siblings().removeClass('hit');
+					$('.panes>div:eq('+$(this).index()+')').show().siblings().hide();	
+				})
+			})
+		</script>
+		
+		<script type="text/javascript" src="js/rotate.js"></script>
+		<script type="text/javascript" src="js/owl.carousel.js"></script>
+	</head>
+	<body>
+		<div class="xy-con margin-t-100">
+			<div class="xy-con-inner">
+				<div class="inner-title">我要投稿</div>
+				<div class="contribute-tab">
+					<a href="javascript:;" class="tab-item action">页面投稿</a>
+					<a href="javascript:;" class="tab-item ">授权转载</a>
+					<div class="clearB"></div>
+				</div>
+				<div class="contribute-main">
+					<!-- 页面投稿 -->
+					<form class="action" action="">
+						<div class="form-item">
+							<span>文章标题</span>
+							<input type="text" placeholder="请填写文章标题">
+						</div>
+						<div class="form-item item-cont">
+							<span>文章内容</span>
+							<textarea placeholder="请填写文章内容"></textarea>
+						</div>
+						<div class="form-item">
+							<span>文章分类：</span>
+							<label>
+								<input type="checkbox">
+								<i>品牌管理</i>
+							</label>
+							<label>
+								<input type="checkbox">
+								<i>SEO优化</i>
+							</label>
+							<label>
+								<input type="checkbox">
+								<i>媒体营销</i>
+							</label>
+							<label>
+								<input type="checkbox">
+								<i>信息流营销</i>
+							</label>
+							<label>
+								<input type="checkbox">
+								<i>自媒体营销</i>
+							</label>
+						</div>
+						<div class="form-item">
+							<p>*授权本站及本站有合作关系的第三方平台发布您的原创稿件，请您放心，授权会严格满足转载规范，标明您的姓名及来源等信息。</p>
+						</div>
+						<div class="form-item">
+							<div class="name">
+								<span>姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名</span>
+								<input type="text" placeholder="请填写您的姓名">
+							</div>
+							<div class="wx">
+								<span>微&nbsp;&nbsp;信&nbsp;&nbsp;号</span>
+								<input type="text" placeholder="您的投稿状态将通过微信通知您">
+							</div>
+						</div>
+						<div class="form-item">
+							<span>来源网址</span>
+							<input type="text" placeholder="请填写网址">
+						</div>
+						<input type="submit" value="提交稿件" class="submit">
+					</form>
+					<!-- 授权转载 -->
+					<form class=" zhuanzai" action="">
+						<div class="form-item">
+							<span>公众号ID</span>
+							<input type="text" placeholder="请填写网址">
+						</div>
+						<div class="form-item">
+							<span>公众号名称</span>
+							<input type="text" placeholder="请填写网址">
+						</div>
+						<div class="form-item">
+							<span>联系微信号</span>
+							<input type="text" placeholder="请填写网址">
+						</div>
+						<div class="form-item s">
+							<span>免责声明：</span>
+							<span class="text-long">本人承诺所提供的账号为本人所有，并同意媒介匣营销学院(ead.meijiexia.com)转载</span>
+						</div>
+						<input type="submit" value="提交稿件" class="submit">
+					</form>
+				</div>
+				<div class="contribute-state">
+					<div class="state-title">投稿说明：</div>
+					<div class="state-cont">1.内容方向：本站主要为互联网营销推广知识类网站，您的内容需为互联网营销推广类的。<br>2.审核时间：我们有专人负责审稿，工作日24小时内审核完毕，节假日可能会延时。<br>3.审核通知：审核状态我们会已微信方式通知您。</div>
+				</div>
+			</div>
+		</div>
+        <!-- 右侧弹出框 -->
+        <div class="rightPopUp">
+            <a href="javascript:;" class="wx">
+                <div class="icon"><img src="img/icon_wx.png" alt=""></div>
+                <div class="left">
+					<img src="img/ewm.png" alt="">
+                    <div class="title">扫描关注微信公众号</div>
+                </div>
+            </a>
+            <a href="javascript:;" class="jl">
+                <div class="icon"><img src="img/icon_jl.png" alt=""></div>
+                <div class="left">
+					<img src="img/ewm.png" alt="">
+                    <div class="title">扫描关注微信公众号</div>
+                </div>
+            </a>
+            <a href="javascript:;" class="xl">
+                <div class="icon"><img src="img/icon_xl.png" alt=""></div>
+                <div class="left">
+					<img src="img/ewm.png" alt="">
+                    <div class="title">扫描关注微信公众号</div>
+                </div>
+            </a>
+        </div>
+		<!--返回顶部开始-->
+		<div id="code"></div>
+		<div id="code_img"></div>
+		<a id="gotop" href="javascript:void(0)"><img src="img/top.png" alt=""/></a>
+		<script type="text/javascript">
+		    function b(){
+		        h = $(window).height();
+		        t = $(document).scrollTop();
+		        if(t > h){
+		            $('#gotop').show();
+		        }else{
+		            $('#gotop').hide();
+		        }
+		    }
+		    $(document).ready(function(e) {
+		
+		        b();
+		
+		        $('#gotop').click(function(){
+		            $(document).scrollTop(0);
+		        });
+		
+		        $('#code').hover(function(){
+		            $(this).attr('id','code_hover');
+		            $('#code_img').show();
+		            $('#code_img').addClass('a-fadeinL');
+		        },function(){
+		            $(this).attr('id','code');
+		            $('#code_img').hide();
+		        })
+		
+		    });
+		
+		    $(window).scroll(function(e){
+		        b();
+		    });
+		</script>
+		<!--顶部搜索-->
+		<script type="text/javascript">
+			$(".search_box a").click(function(){
+				$(".search_alert").show();
+				$(".del_search").show();
+				$(".search_a").hide();
+				$(".nav_ul").hide();
+				$(".search_inp input").focus();
+			});
+			$(".del_search a").click(function(){
+				$(".search_alert").hide();
+				$(".del_search").hide();
+				$(".search_a").show();
+				$(".nav_ul").show();
+			});
+			
+			$(".empty_btn").click(function(){
+				$(this).parent().siblings("ul").empty();
+			});
+			//点击历史标签搜索
+			$(".hot_search ul li a").click(function(){
+				var txts = $(this).text();
+				$(".search_inp input").val(txts);
+			});
+		</script>
+		<!-- 页面投稿与授权转载切换 -->
+		<script>
+			$(".contribute-tab").on("click",".tab-item",function(){
+				$(this).addClass("action");
+				$(this).siblings().removeClass("action");
+				$(".contribute-main form").removeClass("action");
+				$(".contribute-main form").eq($(this).index()).addClass("action");;
+			});
+		</script>
+	</body>
+</html>
