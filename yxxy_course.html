@@ -24,10 +24,10 @@
 <body>
 	<div class="yxxyContainer course">
 		<div class="inner">
-			<a href="javascript:;" class="courseBanner"><img src="img/courseBanner.jpg" alt=""></a>
+			<div class="courseBanner"><img src="img/courseBanner.jpg" alt=""></div>
 			<div class="courseTitle"><i></i>全部课程</div>
 			<div class="courseList">
-				<a href="javascript:;" class="listItem">
+				<div class="listItem">
 					<div class="itemImg">
 						<img src="img/courseImg1.jpg" alt="">
 						<div class="mask">
@@ -44,12 +44,12 @@
 							</div>
 							<div class="msgRight">
 								<button>回看</button>
-								<span>查看相关资料</span>
+								<a href="javascript:;">查看相关资料</a>
 							</div>
 						</div>
 					</div>
-				</a>
-				<a href="javascript:;" class="listItem">
+				</div>
+				<div class="listItem">
 					<div class="itemImg">
 						<img src="img/courseImg2.jpg" alt="">
 						<div class="mask">
@@ -66,12 +66,12 @@
 							</div>
 							<div class="msgRight">
 								<button>回看</button>
-								<span>查看相关资料</span>
+								<a href="javascript:;">查看相关资料</a>
 							</div>
 						</div>
 					</div>
-				</a>
-				<a href="javascript:;" class="listItem">
+				</div>
+				<div class="listItem">
 					<div class="itemImg">
 						<img src="img/courseImg3.jpg" alt="">
 						<div class="mask">
@@ -88,12 +88,12 @@
 							</div>
 							<div class="msgRight">
 								<button>回看</button>
-								<span>查看相关资料</span>
+								<a href="javascript:;">查看相关资料</a>
 							</div>
 						</div>
 					</div>
-				</a>
-				<a href="javascript:;" class="listItem">
+				</div>
+				<div class="listItem">
 					<div class="itemImg">
 						<img src="img/courseImg4.jpg" alt="">
 						<div class="mask">
@@ -110,12 +110,12 @@
 							</div>
 							<div class="msgRight">
 								<button>回看</button>
-								<span>查看相关资料</span>
+								<a href="javascript:;">查看相关资料</a>
 							</div>
 						</div>
 					</div>
-				</a>
-				<a href="javascript:;" class="listItem">
+				</div>
+				<div class="listItem">
 					<div class="itemImg">
 						<img src="img/courseImg5.jpg" alt="">
 						<div class="mask">
@@ -132,12 +132,12 @@
 							</div>
 							<div class="msgRight">
 								<button>回看</button>
-								<span>查看相关资料</span>
+								<a href="javascript:;">查看相关资料</a>
 							</div>
 						</div>
 					</div>
-				</a>
-				<a href="javascript:;" class="listItem">
+				</div>
+				<div class="listItem">
 					<div class="itemImg">
 						<img src="img/courseImg6.jpg" alt="">
 						<div class="mask">
@@ -154,12 +154,12 @@
 							</div>
 							<div class="msgRight">
 								<button>回看</button>
-								<span>查看相关资料</span>
+								<a href="javascript:;">查看相关资料</a>
 							</div>
 						</div>
 					</div>
-				</a>
-				<a href="javascript:;" class="listItem">
+				</div>
+				<div class="listItem">
 					<div class="itemImg">
 						<img src="img/courseImg7.jpg" alt="">
 						<div class="mask">
@@ -176,12 +176,12 @@
 							</div>
 							<div class="msgRight">
 								<button>回看</button>
-								<span>查看相关资料</span>
+								<a href="javascript:;">查看相关资料</a>
 							</div>
 						</div>
 					</div>
-				</a>
-				<a href="javascript:;" class="listItem">
+				</div>
+				<div class="listItem">
 					<div class="itemImg">
 						<img src="img/courseImg8.jpg" alt="">
 						<div class="mask">
@@ -198,12 +198,12 @@
 							</div>
 							<div class="msgRight">
 								<button>回看</button>
-								<span>查看相关资料</span>
+								<a href="javascript:;">查看相关资料</a>
 							</div>
 						</div>
 					</div>
-				</a>
-				<a href="javascript:;" class="listItem">
+				</div>
+				<div class="listItem">
 					<div class="itemImg">
 						<img src="img/courseImg9.jpg" alt="">
 						<div class="mask">
@@ -220,11 +220,11 @@
 							</div>
 							<div class="msgRight">
 								<button>回看</button>
-								<span>查看相关资料</span>
+								<a href="javascript:;">查看相关资料</a>
 							</div>
 						</div>
 					</div>
-				</a>
+				</div>
 
 				<div class="clearB"></div>
 			</div>
@@ -314,6 +314,12 @@
 		$(".hot_search ul li a").click(function () {
 			var txts = $(this).text();
 			$(".search_inp input").val(txts);
+		});
+	</script>
+	<!-- 列表回看 -->
+	<script>
+		$(".courseList").on("click",".msgRight button",function(){
+			$(this).parents(".listItem").find(".itemImg .mask").addClass("current");
 		});
 	</script>
 </body>
