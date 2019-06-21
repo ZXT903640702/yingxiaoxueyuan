@@ -22,91 +22,41 @@
 		<script type="text/javascript" src="js/owl.carousel.js"></script>
 	</head>
 	<body>
-		<div class="xy-con margin-t-100">
+		<div class="xy-con margin-t-100 release">
 			<div class="xy-con-inner">
-				<div class="inner-title">我要投稿</div>
-				<div class="contribute-tab">
-					<a href="javascript:;" class="tab-item action">页面投稿</a>
-					<a href="javascript:;" class="tab-item ">授权转载</a>
-					<div class="clearB"></div>
-				</div>
+				<div class="inner-title">我有需求，快速解决问题</div>
+				<div class="inner-subheading">专业营销顾问，帮你精准定位需求，个性化定制营销方案</div>
+				<!-- 营销需求 -->
 				<div class="contribute-main">
-					<!-- 页面投稿 -->
 					<form class="action" action="">
-						<div class="form-item">
-							<span>文章标题</span>
-							<input type="text" placeholder="请填写文章标题">
-						</div>
 						<div class="form-item item-cont">
-							<span>文章内容</span>
-							<textarea placeholder="请填写文章内容"></textarea>
-						</div>
-						<div class="form-item">
-							<span>文章分类：</span>
-							<label>
-								<input type="checkbox">
-								<i>品牌管理</i>
-							</label>
-							<label>
-								<input type="checkbox">
-								<i>SEO优化</i>
-							</label>
-							<label>
-								<input type="checkbox">
-								<i>媒体营销</i>
-							</label>
-							<label>
-								<input type="checkbox">
-								<i>信息流营销</i>
-							</label>
-							<label>
-								<input type="checkbox">
-								<i>自媒体营销</i>
-							</label>
-						</div>
-						<div class="form-item">
-							<p>*授权本站及本站有合作关系的第三方平台发布您的原创稿件，请您放心，授权会严格满足转载规范，标明您的姓名及来源等信息。</p>
-						</div>
-						<div class="form-item">
-							<div class="name">
-								<span>姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名</span>
-								<input type="text" placeholder="请填写您的姓名">
-							</div>
-							<div class="wx">
-								<span>微&nbsp;&nbsp;信&nbsp;&nbsp;号</span>
-								<input type="text" placeholder="您的投稿状态将通过微信通知您">
-							</div>
-						</div>
-						<div class="form-item">
-							<span>来源网址</span>
-							<input type="text" placeholder="请填写网址">
-						</div>
-						<input type="submit" value="提交稿件" class="submit">
-					</form>
-					<!-- 授权转载 -->
-					<form class=" zhuanzai" action="">
-						<div class="form-item">
-							<span>公众号ID</span>
-							<input type="text" placeholder="请填写网址">
-						</div>
-						<div class="form-item">
-							<span>公众号名称</span>
-							<input type="text" placeholder="请填写网址">
-						</div>
-						<div class="form-item">
-							<span>联系微信号</span>
-							<input type="text" placeholder="请填写网址">
+							<span>请简要描述一下您的营销需求</span>
+							<textarea placeholder="请您简单描述您的需求，实现的功能、效果等"></textarea>
 						</div>
 						<div class="form-item s">
-							<span>免责声明：</span>
-							<span class="text-long">本人承诺所提供的账号为本人所有，并同意媒介匣营销学院(ead.meijiexia.com)转载</span>
+							<span>预算</span>
+							<input type="text" placeholder="请填写您的预算金额">
+							<span>元</span>
 						</div>
-						<input type="submit" value="提交稿件" class="submit">
+						<div class="form-item">
+							<span>请留下您的联系方式，以方便我们能及时联系您</span>
+							<label>
+								<input type="text" placeholder="请填写您的称呼">
+							</label>
+							<label>
+								<input type="phone" class="phone" pattern="^1[3-9]\d{9}$" required placeholder="请填写您的手机号">
+							</label>
+							<label for="" class="vcode last">
+								<input type="text" placeholder="请填写验证码">
+								<button type="button">获取验证码</button>
+							</label>
+							<label>
+								<input type="text" placeholder="期望联系时间">
+							</label>
+							<div class="clearB"></div>
+						</div>
+						<input type="submit" value="立即提交" class="submit">
 					</form>
-				</div>
-				<div class="contribute-state">
-					<div class="state-title">投稿说明：</div>
-					<div class="state-cont">1.内容方向：本站主要为互联网营销推广知识类网站，您的内容需为互联网营销推广类的。<br>2.审核时间：我们有专人负责审稿，工作日24小时内审核完毕，节假日可能会延时。<br>3.审核通知：审核状态我们会已微信方式通知您。</div>
 				</div>
 			</div>
 		</div>
@@ -196,13 +146,30 @@
 				$(".search_inp input").val(txts);
 			});
 		</script>
-		<!-- 页面投稿与授权转载切换 -->
+		<!-- 验证码 -->
 		<script>
-			$(".contribute-tab").on("click",".tab-item",function(){
-				$(this).addClass("action");
-				$(this).siblings().removeClass("action");
-				$(".contribute-main form").removeClass("action");
-				$(".contribute-main form").eq($(this).index()).addClass("action");;
+			var timer = null;
+			var countDown = 60;
+			$(".vcode button").on("click",function(){
+				$(".vcode button").prop("disabled",true);
+				$(".vcode button").html("验证码("+countDown+")");
+				timer = setInterval(function(){
+					countDown--;
+					$(".vcode button").html("验证码("+countDown+")");
+					if(countDown == 0){
+						$(".vcode button").prop("disabled",false);
+						$(".vcode button").html("点击获取");
+						clearInterval(timer);
+						countDown = 60;
+					}
+				},1000);
+			});
+			//表单验证
+			$("form .phone").on("click",function(){
+				$(this)[0].setCustomValidity("");
+			});
+			$("form .phone").on("invalid",function(){
+				$(this)[0].setCustomValidity("请填写正确格式的手机号");
 			});
 		</script>
 	</body>

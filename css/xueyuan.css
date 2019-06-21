@@ -1643,18 +1643,18 @@ p.ppl-p{
 	padding-top: 60px;
 	background-color: #fff;
 }
-.xy-con-inner .inner-title{
+.contribute .xy-con-inner .inner-title{
 	font-size: 28px;
 	color: #333333;
 	text-align: center;
 	margin-bottom: 31px;
 	font-weight: 700;
 }
-.xy-con-inner .contribute-tab{
+.contribute .xy-con-inner .contribute-tab{
 	border-bottom: 1px solid #eb6317;
 	margin-bottom: 20px;
 }
-.xy-con-inner .contribute-tab .tab-item{
+.contribute .xy-con-inner .contribute-tab .tab-item{
 	float: left;
 	width: 140px;
 	height: 46px;
@@ -1666,35 +1666,35 @@ p.ppl-p{
 	margin-right: 9px;
 	text-decoration: none;
 }
-.xy-con-inner .contribute-tab .tab-item.action{
+.contribute .xy-con-inner .contribute-tab .tab-item.action{
 	color: #fff;
 	background-color: #eb6317;
 }
-.xy-con-inner .contribute-main{
+.contribute .xy-con-inner .contribute-main{
 	margin-bottom: 54px;
 }
-.xy-con-inner .contribute-main form{
+.contribute .xy-con-inner .contribute-main form{
 	display: none;
 	font-size: 14px;
 	color: #333333;
 }
-.xy-con-inner .contribute-main form.action{
+.contribute .xy-con-inner .contribute-main form.action{
 	display: block;
 }
-.xy-con-inner .contribute-main form .form-item{
+.contribute .xy-con-inner .contribute-main form .form-item{
 	display: flex;
 	align-items: center;
 	margin-bottom: 10px;
 }
-.xy-con-inner .contribute-main form .form-item span{
+.contribute .xy-con-inner .contribute-main form .form-item span{
 	width: 70px;
 }
-.xy-con-inner .contribute-main form .form-item.item-cont span{
+.contribute .xy-con-inner .contribute-main form .form-item.item-cont span{
 	width: 70px;
 	height: 344px;
 }
-.xy-con-inner .contribute-main form .form-item input[type="text"],
-.xy-con-inner .contribute-main form .form-item textarea{
+.contribute .xy-con-inner .contribute-main form .form-item input[type="text"],
+.contribute .xy-con-inner .contribute-main form .form-item textarea{
 	width: 1090px;
 	min-height: 46px;
 	padding: 10px;
@@ -1703,39 +1703,39 @@ p.ppl-p{
 	box-sizing: border-box;
 	cursor: auto;
 }
-.xy-con-inner .contribute-main form .form-item textarea{
+.contribute .xy-con-inner .contribute-main form .form-item textarea{
 	height: 366px;
 }
-.xy-con-inner .contribute-main form .form-item label{
+.contribute .xy-con-inner .contribute-main form .form-item label{
 	margin: 0 15px 0 0;
 }
-.xy-con-inner .contribute-main form .form-item label input{
+.contribute .xy-con-inner .contribute-main form .form-item label input{
 	vertical-align: middle;
 	margin: 0;
 	cursor: auto;
 }
-.xy-con-inner .contribute-main form .form-item label i{
+.contribute .xy-con-inner .contribute-main form .form-item label i{
 	font-style: normal;
 	font-weight: 400;
 	vertical-align: middle;
 }
-.xy-con-inner .contribute-main form .form-item p{
+.contribute .xy-con-inner .contribute-main form .form-item p{
 	font-size: 16px;
 	font-weight: 700;
 	margin-top: 50px;
 	margin-bottom: 20px;
 }
-.xy-con-inner .contribute-main form .form-item .name,
-.xy-con-inner .contribute-main form .form-item .wx{
+.contribute .xy-con-inner .contribute-main form .form-item .name,
+.contribute .xy-con-inner .contribute-main form .form-item .wx{
 	display: flex;
 	align-items: center;
 	margin-right: 63px;
 }
-.xy-con-inner .contribute-main form .form-item .name input[type="text"],
-.xy-con-inner .contribute-main form .form-item .wx input[type="text"]{
+.contribute .xy-con-inner .contribute-main form .form-item .name input[type="text"],
+.contribute .xy-con-inner .contribute-main form .form-item .wx input[type="text"]{
 	width: 266px;
 }
-.xy-con-inner .contribute-main form .submit{
+.contribute .xy-con-inner .contribute-main form .submit{
 	display: block;
 	width: 140px;
 	height: 52px;
@@ -1746,26 +1746,130 @@ p.ppl-p{
 	border-radius: 140px;
 	margin: 60px auto 0;
 }
-.xy-con-inner .contribute-state .state-title{
+.contribute .xy-con-inner .contribute-state{
+	margin-bottom: 40px;
+}
+.contribute .xy-con-inner .contribute-state .state-title{
 	font-size: 16px;
 	color: #666666;
 	line-height: 1;
 	margin-bottom: 20px;
 }
-.xy-con-inner .contribute-state .state-cont{
+.contribute .xy-con-inner .contribute-state .state-cont{
 	font-size: 14px;
 	color: #666666;
 	line-height: 26px;
 }
-.xy-con-inner .contribute-main form.zhuanzai .form-item.s{
+.contribute .xy-con-inner .contribute-main form.zhuanzai .form-item.s{
 	margin-top: 24px;
 }
-.xy-con-inner .contribute-main form.zhuanzai .form-item span{
+.contribute .xy-con-inner .contribute-main form.zhuanzai .form-item span{
 	width: 81px;
 }
-.xy-con-inner .contribute-main form.zhuanzai .form-item span.text-long{
+.contribute .xy-con-inner .contribute-main form.zhuanzai .form-item span.text-long{
 	width: 1090px;
 	font-weight: 700;
+}
+
+
+/* 发布需求 */
+.release .inner-title{
+	font-size: 24px;
+	color: #333333;
+	text-align: center;
+	font-weight: 700;
+	margin-bottom: 16px;
+	line-height: 1;
+}
+.release .inner-subheading{
+	font-size: 14px;
+	color: #666666;
+	text-align: center;
+	line-height: 1;
+	padding-bottom: 20px;
+	border-bottom: 1px dashed #e5e5e5;
+	margin-bottom: 34px;
+}
+.release .contribute-main form .form-item span{
+	display: block;
+	font-size: 16px;
+	color: #333333;
+	font-weight: 700;
+	margin-bottom: 15px;
+}
+.release .contribute-main form .form-item.s{
+	margin: 16px 0 50px;
+}
+.release .contribute-main form .form-item.s span{
+	display: inline-block;
+	font-size: 14px;
+	color: #333333;
+	margin-right: 10px;
+}
+.release .contribute-main form .form-item input,
+.release .contribute-main form .form-item textarea{
+	width: 312px;
+	min-height: 46px;
+	padding: 10px;
+	border: 1px solid #e5e5e5;
+	resize: none;
+	box-sizing: border-box;
+	cursor: auto;
+	color: #333;
+	font-size: 14px;
+	font-weight: 400;
+}
+.release .contribute-main form .form-item input::placeholder,
+.release .contribute-main form .form-item textarea::placeholder{
+	color: #999999;
+}
+.release .contribute-main form .form-item textarea{
+	width: 100%;
+	height: 164px;
+}
+.release .contribute-main form .form-item label{
+	float: left;
+	width: 33%;
+	margin-right: 0.5%;
+	margin-bottom: 10px;
+}
+.release .contribute-main form .form-item label.last{
+	margin-right: 0%;
+}
+.release .contribute-main form .form-item label input{
+	display: block;
+	width: 100%;
+}
+.release .contribute-main form .form-item label.vcode input{
+	float: left;
+	width: 165px;
+	margin-right: 5px;
+}
+.release .contribute-main form .form-item label.vcode button{
+	float: left;
+	width: 111px;
+	height: 46px;
+	border-width: 0;
+	background-color: #eb6317;
+	color: #fff;
+	font-size: 14px;
+	border-radius: 5px;
+	margin-right: 5px;
+	font-weight: 400;
+}
+.release .contribute-main form .form-item label.vcode button:disabled{
+	background-color: #cccccc;
+}
+.release .contribute-main form .submit{
+	display: block;
+	width: 140px;
+	height: 52px;
+	border-width: 0;
+	font-size: 16px;
+	color: #fff;
+	background-color: #eb6317;
+	border-radius: 140px;
+	margin: 85px auto;
 }
 
 
@@ -1827,4 +1931,9 @@ p.ppl-p{
 }
 .rightPopUp a:hover .left{
     display: block;
+}
+@media screen and (max-width:1440px){
+    .rightPopUp{
+        right: 10px;
+    }
 }
