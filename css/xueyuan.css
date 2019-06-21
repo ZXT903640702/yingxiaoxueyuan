@@ -1638,23 +1638,31 @@ p.ppl-p{
 
 
 /* 营销学院-我要投稿 */
-.xy-con-inner{
+.yxxyContainer{
+	padding-top: 120px;
+	background-color: #f8f8f8;
+}
+.yxxyContainer .inner{
+	width: 1200px;
+	background-color: #fff;
+	margin: 0 auto;
+}
+.yxxyContainer .inner .inner-main{
 	padding: 20px;
 	padding-top: 60px;
-	background-color: #fff;
 }
-.contribute .xy-con-inner .inner-title{
+.contribute .inner .inner-title{
 	font-size: 28px;
 	color: #333333;
 	text-align: center;
 	margin-bottom: 31px;
 	font-weight: 700;
 }
-.contribute .xy-con-inner .contribute-tab{
+.contribute .inner .contribute-tab{
 	border-bottom: 1px solid #eb6317;
 	margin-bottom: 20px;
 }
-.contribute .xy-con-inner .contribute-tab .tab-item{
+.contribute .inner .contribute-tab .tab-item{
 	float: left;
 	width: 140px;
 	height: 46px;
@@ -1666,35 +1674,35 @@ p.ppl-p{
 	margin-right: 9px;
 	text-decoration: none;
 }
-.contribute .xy-con-inner .contribute-tab .tab-item.action{
+.contribute .inner .contribute-tab .tab-item.action{
 	color: #fff;
 	background-color: #eb6317;
 }
-.contribute .xy-con-inner .contribute-main{
+.contribute .inner .contribute-main{
 	margin-bottom: 54px;
 }
-.contribute .xy-con-inner .contribute-main form{
+.contribute .inner .contribute-main form{
 	display: none;
 	font-size: 14px;
 	color: #333333;
 }
-.contribute .xy-con-inner .contribute-main form.action{
+.contribute .inner .contribute-main form.action{
 	display: block;
 }
-.contribute .xy-con-inner .contribute-main form .form-item{
+.contribute .inner .contribute-main form .form-item{
 	display: flex;
 	align-items: center;
 	margin-bottom: 10px;
 }
-.contribute .xy-con-inner .contribute-main form .form-item span{
+.contribute .inner .contribute-main form .form-item span{
 	width: 70px;
 }
-.contribute .xy-con-inner .contribute-main form .form-item.item-cont span{
+.contribute .inner .contribute-main form .form-item.item-cont span{
 	width: 70px;
 	height: 344px;
 }
-.contribute .xy-con-inner .contribute-main form .form-item input[type="text"],
-.contribute .xy-con-inner .contribute-main form .form-item textarea{
+.contribute .inner .contribute-main form .form-item input[type="text"],
+.contribute .inner .contribute-main form .form-item textarea{
 	width: 1090px;
 	min-height: 46px;
 	padding: 10px;
@@ -1703,39 +1711,39 @@ p.ppl-p{
 	box-sizing: border-box;
 	cursor: auto;
 }
-.contribute .xy-con-inner .contribute-main form .form-item textarea{
+.contribute .inner .contribute-main form .form-item textarea{
 	height: 366px;
 }
-.contribute .xy-con-inner .contribute-main form .form-item label{
+.contribute .inner .contribute-main form .form-item label{
 	margin: 0 15px 0 0;
 }
-.contribute .xy-con-inner .contribute-main form .form-item label input{
+.contribute .inner .contribute-main form .form-item label input{
 	vertical-align: middle;
 	margin: 0;
 	cursor: auto;
 }
-.contribute .xy-con-inner .contribute-main form .form-item label i{
+.contribute .inner .contribute-main form .form-item label i{
 	font-style: normal;
 	font-weight: 400;
 	vertical-align: middle;
 }
-.contribute .xy-con-inner .contribute-main form .form-item p{
+.contribute .inner .contribute-main form .form-item p{
 	font-size: 16px;
 	font-weight: 700;
 	margin-top: 50px;
 	margin-bottom: 20px;
 }
-.contribute .xy-con-inner .contribute-main form .form-item .name,
-.contribute .xy-con-inner .contribute-main form .form-item .wx{
+.contribute .inner .contribute-main form .form-item .name,
+.contribute .inner .contribute-main form .form-item .wx{
 	display: flex;
 	align-items: center;
 	margin-right: 63px;
 }
-.contribute .xy-con-inner .contribute-main form .form-item .name input[type="text"],
-.contribute .xy-con-inner .contribute-main form .form-item .wx input[type="text"]{
+.contribute .inner .contribute-main form .form-item .name input[type="text"],
+.contribute .inner .contribute-main form .form-item .wx input[type="text"]{
 	width: 266px;
 }
-.contribute .xy-con-inner .contribute-main form .submit{
+.contribute .inner .contribute-main form .submit{
 	display: block;
 	width: 140px;
 	height: 52px;
@@ -1746,27 +1754,27 @@ p.ppl-p{
 	border-radius: 140px;
 	margin: 60px auto 0;
 }
-.contribute .xy-con-inner .contribute-state{
+.contribute .inner .contribute-state{
 	margin-bottom: 40px;
 }
-.contribute .xy-con-inner .contribute-state .state-title{
+.contribute .inner .contribute-state .state-title{
 	font-size: 16px;
 	color: #666666;
 	line-height: 1;
 	margin-bottom: 20px;
 }
-.contribute .xy-con-inner .contribute-state .state-cont{
+.contribute .inner .contribute-state .state-cont{
 	font-size: 14px;
 	color: #666666;
 	line-height: 26px;
 }
-.contribute .xy-con-inner .contribute-main form.zhuanzai .form-item.s{
+.contribute .inner .contribute-main form.zhuanzai .form-item.s{
 	margin-top: 24px;
 }
-.contribute .xy-con-inner .contribute-main form.zhuanzai .form-item span{
+.contribute .inner .contribute-main form.zhuanzai .form-item span{
 	width: 81px;
 }
-.contribute .xy-con-inner .contribute-main form.zhuanzai .form-item span.text-long{
+.contribute .inner .contribute-main form.zhuanzai .form-item span.text-long{
 	width: 1090px;
 	font-weight: 700;
 }
@@ -1873,6 +1881,136 @@ p.ppl-p{
 }
 
 
+/* 营销学院-课程 */
+.course .inner{
+	background-color: #f8f8f8;
+}
+.course .courseTitle{
+	position: relative;
+	font-size: 16px;
+	color: #333333;
+	padding-left: 12px;
+	margin: 30px 0 20px;
+}
+.course .courseTitle i{
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 2px;
+	height: 17px;
+	background-color: #eb6317;
+	margin-top: -8.5px;
+}
+.course .courseBanner,
+.course .courseBanner img{
+	display: block;
+	width: 100%;
+}
+.course .courseList{
+	padding-bottom: 30px;
+}
+.course .courseList .listItem{
+	float: left;
+	width: 380px;
+	height: 338px;
+	background-color: #fff;
+	margin: 0 30px 30px 0;
+	transition: all .5s ease;
+}
+.course .courseList .listItem:nth-child(3n){
+	margin-right: 0;
+}
+.course .courseList .listItem:hover{
+	box-shadow: 0px 0px 20px 0px #d9d9d9;
+}
+.course .courseList .listItem .itemImg,
+.course .courseList .listItem .itemImg img{
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 225px;
+}
+.course .courseList .listItem .itemImg .mask{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background:rgba(0,0,0,.4);
+	opacity: 0;
+	box-sizing: border-box;
+	padding-top: 20px;
+	transition: all .5s ease;
+}
+.course .courseList .listItem .itemImg .mask img{
+	display: block;
+	width: 160px;
+	height: 160px;
+	margin: 0 auto 14px;
+}
+.course .courseList .listItem .itemImg .mask p{
+	text-align: center;
+	font-size: 14px;
+	color: #fff;
+	margin: 0;
+}
+.course .courseList .listItem:hover .itemImg .mask{
+	opacity: 1;
+}
+.course .courseList .listItem .itemBottom{
+	padding: 20px 10px;
+}
+.course .courseList .listItem .itemBottom .itemTitle{
+	font-size: 14px;
+	color: #333333;
+	line-height: 1;
+	margin-bottom: 14px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.course .courseList .listItem .itemBottom .itemMsg{
+	position: relative;
+	overflow: hidden;
+}
+.course .courseList .listItem .itemBottom .itemMsg .msgLeft{
+	float: left;
+	font-size: 12px;
+	color: #999999;
+	line-height: 1;
+}
+.course .courseList .listItem .itemBottom .itemMsg .msgLeft .itemDate{
+	margin-bottom: 14px;
+}
+.course .courseList .listItem .itemBottom .itemMsg .msgRight{
+	float: right;
+}
+.course .courseList .listItem .itemBottom .itemMsg .msgRight button{
+	display: block;
+	width: 86px;
+	height: 31px;
+	border-radius: 5px;
+	background-color: #fff;
+	font-size: 14px;
+	color: #999999;
+	border: 1px solid #e8e8e8;
+	margin-bottom: 5px;
+	transition: all .5s ease;
+}
+.course .courseList .listItem:hover .itemBottom .itemMsg .msgRight button{
+	background-color: #eb6317;
+	border-color: #eb6317;
+	color: #fff;
+}
+.course .courseList .listItem .itemBottom .itemMsg .msgRight span{
+	display: block;
+	text-align: center;
+	line-height: 1;
+	font-size: 12px;
+	color: #999999;
+}
+
+
 /* 右侧弹出框 */
 .rightPopUp{
     position: fixed;
@@ -1886,11 +2024,11 @@ p.ppl-p{
     position: relative;
     float: right;
     width: 38px;
-    height: 38px;
-    background-color: #eb6317;
+	height: 38px;
+	background-color: #c6c6c8;
     white-space: nowrap;
     border-radius: 5px;
-    margin-bottom: 1px;
+	margin-bottom: 1px;
 }
 .rightPopUp a .icon{
     position: relative;
@@ -1928,6 +2066,9 @@ p.ppl-p{
 .rightPopUp a .left img{
     display: block;
     margin: 0 auto;
+}
+.rightPopUp a:hover{
+    background-color: #eb6317;
 }
 .rightPopUp a:hover .left{
     display: block;
