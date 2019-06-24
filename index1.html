@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>营销学院</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/global.css"/>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/mine.css"/>
+		<link rel="stylesheet" href="css/owl.carousel.css" />
+		<link rel="stylesheet" href="css/xueyuan.css" />
+		<script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>
+		<script type="text/javascript">
+			$(function(){	
+				$('.phb-top ul li').click(function(){
+					$(this).addClass('hit').siblings().removeClass('hit');
+					$('.panes>div:eq('+$(this).index()+')').show().siblings().hide();	
+				})
+			})
+		</script>
+		<script type="text/javascript">
+		$(function(){
+			$('#owl-demo').owlCarousel({
+				items: 1,
+				navigation: true,
+				navigationText: ["上一个","下一个"],
+				autoPlay: true,
+				stopOnHover: true
+			}).hover(function(){
+				$('.owl-buttons').show();
+			}, function(){
+				$('.owl-buttons').hide();
+			});
+		});
+		</script>
+		<script type="text/javascript" src="js/rotate.js"></script>
+		<script type="text/javascript" src="js/owl.carousel.js"></script>
+	</head>
+	<body>
+		<!--顶部导航-->
+		<div class="header_box">
+			<div class="max_wh row">
+				<div class="logo_box float_lf">
+					<a href="#"><img src="img/yx_school.png"/></a>
+				</div>
+				<ul class="nav_ul float_lf">
+					<li><a href="#" class="act_nav">首页</a></li>
+					<li><a href="#">资讯</a></li>
+					<li><a href="#">搜索</a></li>
+					<li><a href="#">软文</a></li>
+					<li><a href="#">口碑</a></li>
+					<li><a href="#">自媒体</a></li>
+					<li><a href="#">广告</a></li>
+					<li><a href="#">流量</a></li>
+				</ul>
+				<!--搜索弹框-->
+				<div class="search_alert float_lf" style="display: none;">
+					<form class="search_inp">
+						<input class="float_lf" type="search" name="" value="" placeholder="请输入关键词进行搜索"/>
+						<button class="search_btn float_lf" href="#"><img src="img/s_search.png"/></button>
+					</form>
+					<div class="hot_history">
+						<!--热门搜索-->
+						<div class="hot_search">
+							<p class="font-size-18 text-left">热门搜索</p>
+							<ul class="clearfix">
+								<li class="col-lg-3"><a href="#">新闻发稿</a></li>
+								<li class="col-lg-3"><a href="#">搜索问答</a></li>
+								<li class="col-lg-3"><a href="#">广告投放</a></li>
+								<li class="col-lg-3"><a href="#">新闻发稿</a></li>
+								<li class="col-lg-3"><a href="#">新闻发稿</a></li>
+								<li class="col-lg-3"><a href="#">搜索问答</a></li>
+								<li class="col-lg-3"><a href="#">广告投放</a></li>
+								<li class="col-lg-3"><a href="#">新闻发稿</a></li>
+							</ul>
+						</div>
+						<!--历史搜索-->
+						<div class="hot_search">
+							<p class="font-size-18 text-left mar-top-20 clearfix">
+								<span class="float_lf">历史搜索</span>
+								<a class="empty_btn float_rt margin-r-30 color-666 font-size-14 margin-t-5" href="javascript:;">清空历史</a>
+							</p>
+							<ul class="clearfix">
+								<li class="col-lg-3"><a href="#">新闻发稿</a></li>
+								<li class="col-lg-3"><a href="#">搜索问答</a></li>
+								<li class="col-lg-3"><a href="#">广告投放</a></li>
+								<li class="col-lg-3"><a href="#">新闻发稿</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="search_tel float_lf">
+					<div class="search_box search_a col-lg-3  padding-0 float_lf">
+						<a href="#">
+							<span class="float_lf">|</span>
+							<img class="float_lf" src="img/s_search.png"/>
+							<span class="float_lf">|</span>
+						</a>
+					</div>
+					<div class="search_box del_search col-lg-3 padding-0 float_lf" style="display: none;">
+						<a href="#">
+							<img class="float_lf" src="img/del_search.png"/>
+							<span class="float_lf">|</span>
+						</a>
+					</div>
+					<div class="com_tel col-lg-9 padding-0 text-right clearfix">
+						<div class="mid_box">
+							<!--未登录状态-->
+							<div class="clearfix">
+								<a href="#" class="login">登录</a>
+								<a href="#" class="register">免费注册</a>
+							</div>
+							<!--已登录状态-->
+							<!--<div class="logined clearfix">
+								<a href="#" class="float_lf"><img src="img/user_img.png"/></a>
+								<a href="#" class="float_lf txt-num1 margin-t-10 margin-l-10">名称名称名称名称</a>
+							</div>-->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="xy-con margin-t-100">
+			<div class="xy-conl mar-top-20">
+				<div class="xy-conla">
+					<div class="xy-conlb">
+						
+						<!-- Demo -->
+						<div id="owl-demo" class="owl-carousel">
+							<a class="item" href="#" target="_blank"><img src="img/xy_1.jpg" alt=""><b></b><span>巴西训练内马尔受伤吓坏队友巴西训练内马尔受伤吓坏队友巴西训练内马尔受伤吓坏队友巴西训练内马尔受伤吓坏队友巴西训练内马尔受伤吓坏队友</span></a>
+							<a class="item" href="#" target="_blank"><img src="img/xy_1.jpg" alt=""><b></b><span>搜狐直击德国训练 众星拼抢激烈</span></a>
+							<a class="item" href="#" target="_blank"><img src="img/xy_1.jpg" alt=""><b></b><span>西班牙备战演功夫足球 哈维蝎子摆尾</span></a>
+							<a class="item" href="#" target="_blank"><img src="img/xy_1.jpg" alt=""><b></b><span>印第安美女追捧德国 特色服饰助威抢镜</span></a>
+							<a class="item" href="#" target="_blank"><img src="img/xy_1.jpg" alt=""><b></b><span>锐体育：回望1958年世界杯</span></a>
+							<a class="item" href="#" target="_blank"><img src="img/xy_1.jpg" alt=""><b></b><span>搜狐视频《世界杯特别报道》 发布会众星云集</span></a>
+							<a class="item" href="#" target="_blank"><img src="img/xy_1.jpg" alt=""><b></b><span>梅西vs罗谁能笑傲巴西世界杯</span></a>
+						</div>
+					</div>
+					<div class="xy-conlc">
+						<a href="#"><img src="img/xy_2.jpg"/></a>
+						<a href="#"><img style="margin-top: 17px;" src="img/xy_4.jpg"/></a>
+					</div>
+				</div>
+				<div class="xy-conld">
+					<h1>推荐文章</h1>
+					<div class="xy-list">
+						<div class="xy-lista">
+							<img class="xy-rw" src="img/xy_5.jpg"/>
+							<div class="xy-listr">
+								<h2><a href="#">公关公司HR的生存指南</a></h2>
+								<p>今天是315，早上，一篇《蓝色光标，所谓亚洲最大公关公司，如此坑害老员工如此坑害老员工如此坑害老员工如此坑害老员工如此坑害老员工如此坑害老员工如此坑害老员工如此坑害老员工如此坑害老员工，良心真的不会痛吗？</p>
+								<div class="xy-a">
+									<img src="img/rw.png"/><p class="rw-pa">万能的大叔</p>
+									<div class="xy-b">
+										<img src="img/eye.png"/>
+										<p>166</p>
+										<img src="img/sc.png" alt="" />
+										<p>200</p>
+										<img src="img/time.png"/>
+										<p>2018-03-09 10:52</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					
+						<div class="xy-lista">
+							<img class="xy-rw" src="img/xy_5.jpg"/>
+							<div class="xy-listr">
+								<h2><a href="#">公关公司HR的生存指南</a></h2>
+								<p>今天是315，早上，一篇《蓝色光标，所谓亚洲最大公关公司，如此坑害老员工如此坑害老员工如此坑害老员工如此坑害老员工如此坑害老员工如此坑害老员工如此坑害老员工如此坑害老员工如此坑害老员工，良心真的不会痛吗？</p>
+								<div class="xy-a">
+									<img src="img/rw.png"/><p class="rw-pa">万能的大叔</p>
+									<div class="xy-b">
+										<img src="img/eye.png"/>
+										<p>166</p>
+										<img src="img/sc.png" alt="" />
+										<p>200</p>
+										<img src="img/time.png"/>
+										<p>2018-03-09 10:52</p>
+									</div>
+								</div>
+							</div>
+						
+					
+						</div>
+						<div class="xy-lista">
+							<img class="xy-rw" src="img/xy_5.jpg"/>
+							<div class="xy-listr">
+								<h2><a href="#">公关公司HR的生存指南</a></h2>
+								<p>今天是315，早上，一篇《蓝色光标，所谓亚洲最大公关公司，如此坑害老员工如此坑害老员工如此坑害老员工如此坑害老员工如此坑害老员工如此坑害老员工如此坑害老员工如此坑害老员工如此坑害老员工，良心真的不会痛吗？</p>
+								<div class="xy-a">
+									<img src="img/rw.png"/><p class="rw-pa">万能的大叔</p>
+									<div class="xy-b">
+										<img src="img/eye.png"/>
+										<p>166</p>
+										<img src="img/sc.png" alt="" />
+										<p>200</p>
+										<img src="img/time.png"/>
+										<p>2018-03-09 10:52</p>
+									</div>
+								</div>
+							</div>
+						
+					
+						</div>
+						<div class="xy-lista">
+							<img class="xy-rw" src="img/xy_5.jpg"/>
+							<div class="xy-listr">
+								<h2><a href="#">公关公司HR的生存指南</a></h2>
+								<p>今天是315，早上，一篇《蓝色光标，所谓亚洲最大公关公司，如此坑害老员工如此坑害老员工如此坑害老员工如此坑害老员工如此坑害老员工如此坑害老员工如此坑害老员工如此坑害老员工如此坑害老员工，良心真的不会痛吗？</p>
+								<div class="xy-a">
+									<img src="img/rw.png"/><p class="rw-pa">万能的大叔</p>
+									<div class="xy-b">
+										<img src="img/eye.png"/>
+										<p>166</p>
+										<img src="img/sc.png" alt="" />
+										<p>200</p>
+										<img src="img/time.png"/>
+										<p>2018-03-09 10:52</p>
+									</div>
+								</div>
+							</div>
+						</div>
+				    	<a href="#">
+				    		<img class="xy-img" src="img/xy_10.jpg"/>
+				    	</a>
+				    	<div class="xy-lista">
+							<img class="xy-rw" src="img/xy_5.jpg"/>
+							<div class="xy-listr">
+								<h2><a href="#">公关公司HR的生存指南</a></h2>
+								<p>今天是315，早上，一篇《蓝色光标，所谓亚洲最大公关公司，如此坑害老员工如此坑害老员工如此坑害老员工如此坑害老员工如此坑害老员工如此坑害老员工如此坑害老员工如此坑害老员工如此坑害老员工，良心真的不会痛吗？</p>
+								<div class="xy-a">
+									<img src="img/rw.png"/><p class="rw-pa">万能的大叔</p>
+									<div class="xy-b">
+										<img src="img/eye.png"/>
+										<p>166</p>
+										<img src="img/sc.png" alt="" />
+										<p>200</p>
+										<img src="img/time.png"/>
+										<p>2018-03-09 10:52</p>
+									</div>
+								</div>
+							</div>
+						
+					
+						</div>
+						<div class="xy-lista">
+							<img class="xy-rw" src="img/xy_5.jpg"/>
+							<div class="xy-listr">
+								<h2><a href="#">公关公司HR的生存指南</a></h2>
+								<p>今天是315，早上，一篇《蓝色光标，所谓亚洲最大公关公司，如此坑害老员工如此坑害老员工如此坑害老员工如此坑害老员工如此坑害老员工如此坑害老员工如此坑害老员工如此坑害老员工如此坑害老员工，良心真的不会痛吗？</p>
+								<div class="xy-a">
+									<img src="img/rw.png"/><p class="rw-pa">万能的大叔</p>
+									<div class="xy-b">
+										<img src="img/eye.png"/>
+										<p>166</p>
+										<img src="img/sc.png" alt="" />
+										<p>200</p>
+										<img src="img/time.png"/>
+										<p>2018-03-09 10:52</p>
+									</div>
+								</div>
+							</div>
+						
+					
+						</div>
+						<a href="#">
+				    		<img class="xy-img" src="img/xy_6.jpg"/>
+				    	</a>
+						<div class="xy-lista">
+							<img class="xy-rw" src="img/xy_5.jpg"/>
+							<div class="xy-listr">
+								<h2><a href="#">公关公司HR的生存指南</a></h2>
+								<p>今天是315，早上，一篇《蓝色光标，所谓亚洲最大公关公司，如此坑害老员工如此坑害老员工如此坑害老员工如此坑害老员工如此坑害老员工如此坑害老员工如此坑害老员工如此坑害老员工如此坑害老员工，良心真的不会痛吗？</p>
+								<div class="xy-a">
+									<img src="img/rw.png"/><p class="rw-pa">万能的大叔</p>
+									<div class="xy-b">
+										<img src="img/eye.png"/>
+										<p>166</p>
+										<img src="img/sc.png" alt="" />
+										<p>200</p>
+										<img src="img/time.png"/>
+										<p>2018-03-09 10:52</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					
+						<div class="xy-lista">
+							<img class="xy-rw" src="img/xy_5.jpg"/>
+							<div class="xy-listr">
+								<h2><a href="#">公关公司HR的生存指南</a></h2>
+								<p>今天是315，早上，一篇《蓝色光标，所谓亚洲最大公关公司，如此坑害老员工如此坑害老员工如此坑害老员工如此坑害老员工如此坑害老员工如此坑害老员工如此坑害老员工如此坑害老员工如此坑害老员工，良心真的不会痛吗？</p>
+								<div class="xy-a">
+									<img src="img/rw.png"/><p class="rw-pa">万能的大叔</p>
+									<div class="xy-b">
+										<img src="img/eye.png"/>
+										<p>166</p>
+										<img src="img/sc.png" alt="" />
+										<p>200</p>
+										<img src="img/time.png"/>
+										<p>2018-03-09 10:52</p>
+									</div>
+								</div>
+							</div>
+						
+					
+						</div>
+						<div class="xy-lista">
+							<img class="xy-rw" src="img/xy_5.jpg"/>
+							<div class="xy-listr">
+								<h2><a href="#">公关公司HR的生存指南</a></h2>
+								<p>今天是315，早上，一篇《蓝色光标，所谓亚洲最大公关公司，如此坑害老员工如此坑害老员工如此坑害老员工如此坑害老员工如此坑害老员工如此坑害老员工如此坑害老员工如此坑害老员工如此坑害老员工，良心真的不会痛吗？</p>
+								<div class="xy-a">
+									<img src="img/rw.png"/><p class="rw-pa">万能的大叔</p>
+									<div class="xy-b">
+										<img src="img/eye.png"/>
+										<p>166</p>
+										<img src="img/sc.png" alt="" />
+										<p>200</p>
+										<img src="img/time.png"/>
+										<p>2018-03-09 10:52</p>
+									</div>
+								</div>
+							</div>
+						
+					
+						</div>
+						<div class="xy-lista">
+							<img class="xy-rw" src="img/xy_5.jpg"/>
+							<div class="xy-listr">
+								<h2><a href="#">公关公司HR的生存指南</a></h2>
+								<p>今天是315，早上，一篇《蓝色光标，所谓亚洲最大公关公司，如此坑害老员工如此坑害老员工如此坑害老员工如此坑害老员工如此坑害老员工如此坑害老员工如此坑害老员工如此坑害老员工如此坑害老员工，良心真的不会痛吗？</p>
+								<div class="xy-a">
+									<img src="img/rw.png"/><p class="rw-pa">万能的大叔</p>
+									<div class="xy-b">
+										<img src="img/eye.png"/>
+										<p>166</p>
+										<img src="img/sc.png" alt="" />
+										<p>200</p>
+										<img src="img/time.png"/>
+										<p>2018-03-09 10:52</p>
+									</div>
+								</div>
+							</div>
+						
+					
+						</div>
+				    	<a href="#">
+				    		<img class="xy-img" src="img/xy_11.jpg"/>
+				    	</a>
+				    	<div class="xy-lista">
+							<img class="xy-rw" src="img/xy_5.jpg"/>
+							<div class="xy-listr">
+								<h2><a href="#">公关公司HR的生存指南</a></h2>
+								<p>今天是315，早上，一篇《蓝色光标，所谓亚洲最大公关公司，如此坑害老员工如此坑害老员工如此坑害老员工如此坑害老员工如此坑害老员工如此坑害老员工如此坑害老员工如此坑害老员工如此坑害老员工，良心真的不会痛吗？</p>
+								<div class="xy-a">
+									<img src="img/rw.png"/><p class="rw-pa">万能的大叔</p>
+									<div class="xy-b">
+										<img src="img/eye.png"/>
+										<p>166</p>
+										<img src="img/sc.png" alt="" />
+										<p>200</p>
+										<img src="img/time.png"/>
+										<p>2018-03-09 10:52</p>
+									</div>
+								</div>
+							</div>
+						
+					
+						</div>
+						<div class="xy-lista">
+							<img class="xy-rw" src="img/xy_5.jpg"/>
+							<div class="xy-listr">
+								<h2><a href="#">公关公司HR的生存指南</a></h2>
+								<p>今天是315，早上，一篇《蓝色光标，所谓亚洲最大公关公司，如此坑害老员工如此坑害老员工如此坑害老员工如此坑害老员工如此坑害老员工如此坑害老员工如此坑害老员工如此坑害老员工如此坑害老员工，良心真的不会痛吗？</p>
+								<div class="xy-a">
+									<img src="img/rw.png"/><p class="rw-pa">万能的大叔</p>
+									<div class="xy-b">
+										<img src="img/eye.png"/>
+										<p>166</p>
+										<img src="img/sc.png" alt="" />
+										<p>200</p>
+										<img src="img/time.png"/>
+										<p>2018-03-09 10:52</p>
+									</div>
+								</div>
+							</div>
+						
+					
+						</div>
+						<div class="xy-lista">
+							<img class="xy-rw" src="img/xy_5.jpg"/>
+							<div class="xy-listr">
+								<h2><a href="#">公关公司HR的生存指南</a></h2>
+								<p>今天是315，早上，一篇《蓝色光标，所谓亚洲最大公关公司，如此坑害老员工如此坑害老员工如此坑害老员工如此坑害老员工如此坑害老员工如此坑害老员工如此坑害老员工如此坑害老员工如此坑害老员工，良心真的不会痛吗？</p>
+								<div class="xy-a">
+									<img src="img/rw.png"/><p class="rw-pa">万能的大叔</p>
+									<div class="xy-b">
+										<img src="img/eye.png"/>
+										<p>166</p>
+										<img src="img/sc.png" alt="" />
+										<p>200</p>
+										<img src="img/time.png"/>
+										<p>2018-03-09 10:52</p>
+									</div>
+								</div>
+							</div>
+						
+					
+						</div>
+					</div>
+					<div class="xx-more">
+						<a href="#">加载更多</a>
+					</div>
+			    </div>
+			</div>
+			<div class="xy-conr mar-top-20">
+				<a href="#">
+					<img src="img/xy_3.jpg"/>
+				</a>
+				<div class="phb-top">
+					<div class="pp-lefta">
+						<div class="pp-left">排行榜</div>
+					</div>	
+					<ul>	
+						<li class="hit">周</li>
+						<li>月</li>
+				        <li>年</li>
+					</ul>
+					<div class="panes">
+						<div class="pane" style="display:block;">
+							<div class="pa-a">
+								<span>01</span>   <a href="#">一个人开始废掉的3种迹象一个人开始废掉的3种迹象一个人开始废掉的3种迹象一个人开始废掉的3种迹象</a>
+							</div>
+							<div class="pa-a">
+								<span>02</span>   <a href="#">一个人开始废掉的3种迹象一个人开始废掉的3种迹象一个人开始废掉的3种迹象一个人开始废掉的3种迹象</a>
+							</div>
+							<div class="pa-a">
+								<span>03</span>   <a href="#">一个人开始废掉的3种迹象一个人开始废掉的3种迹象一个人开始废掉的3种迹象一个人开始废掉的3种迹象</a>
+							</div>
+							<div class="pa-a">
+								<span>04</span>   <a href="#">一个人开始废掉的3种迹象一个人开始废掉的3种迹象一个人开始废掉的3种迹象一个人开始废掉的3种迹象</a>
+							</div>
+							<div class="pa-a">
+								<span>05</span>   <a href="#">一个人开始废掉的3种迹象一个人开始废掉的3种迹象一个人开始废掉的3种迹象一个人开始废掉的3种迹象</a>
+							</div>
+							<div class="pa-a">
+								<span>06</span>   <a href="#">一个人开始废掉的3种迹象一个人开始废掉的3种迹象一个人开始废掉的3种迹象一个人开始废掉的3种迹象</a>
+							</div>
+							<div class="pa-a">
+								<span>07</span>   <a href="#">一个人开始废掉的3种迹象一个人开始废掉的3种迹象一个人开始废掉的3种迹象一个人开始废掉的3种迹象</a>
+							</div>
+							<div class="pa-a">
+								<span>08</span>   <a href="#">一个人开始废掉的3种迹象一个人开始废掉的3种迹象一个人开始废掉的3种迹象一个人开始废掉的3种迹象</a>
+							</div>
+							<div class="pa-a">
+								<span>09</span>   <a href="#">一个人开始废掉的3种迹象一个人开始废掉的3种迹象一个人开始废掉的3种迹象一个人开始废掉的3种迹象</a>
+							</div>
+							<div class="pa-a">
+								<span>10</span>   <a href="#">一个人开始废掉的3种迹象一个人开始废掉的3种迹象一个人开始废掉的3种迹象一个人开始废掉的3种迹象</a>
+							</div>
+						</div>
+						<div class="pane">
+							<div class="pa-a">
+								<span>01</span>   <a href="#">一个人开始废掉的3种迹象</a>
+							</div>
+							<div class="pa-a">
+								<span>02</span>   <a href="#">一个人开始废掉的3种迹象</a>
+							</div>
+							<div class="pa-a">
+								<span>03</span>   <a href="#">一个人开始废掉的3种迹象</a>
+							</div>
+							<div class="pa-a">
+								<span>04</span>   <a href="#">一个人开始废掉的3种迹象</a>
+							</div>
+							<div class="pa-a">
+								<span>05</span>   <a href="#">一个人开始废掉的3种迹象</a>
+							</div>
+							<div class="pa-a">
+								<span>06</span>   <a href="#">一个人开始废掉的3种迹象</a>
+							</div>
+							<div class="pa-a">
+								<span>07</span>   <a href="#">一个人开始废掉的3种迹象</a>
+							</div>
+							<div class="pa-a">
+								<span>08</span>   <a href="#">一个人开始废掉的3种迹象</a>
+							</div>
+							<div class="pa-a">
+								<span>09</span>   <a href="#">一个人开始废掉的3种迹象</a>
+							</div>
+							<div class="pa-a">
+								<span>10</span>   <a href="#">一个人开始废掉的3种迹象</a>
+							</div>
+						</div>
+			            <div class="pane">
+			            	<div class="pa-a">
+								<span>01</span>   <a href="#">一个人开始废掉的3种迹象一个人开始废掉的3种迹象一个人开始废掉的3种迹象一个人开始废掉的3种迹象</a>
+							</div>
+							<div class="pa-a">
+								<span>02</span>   <a href="#">一个人开始废掉的3种迹象一个人开始废掉的3种迹象一个人开始废掉的3种迹象一个人开始废掉的3种迹象</a>
+							</div>
+							<div class="pa-a">
+								<span>03</span>   <a href="#">一个人开始废掉的3种迹象一个人开始废掉的3种迹象一个人开始废掉的3种迹象一个人开始废掉的3种迹象</a>
+							</div>
+							<div class="pa-a">
+								<span>04</span>   <a href="#">一个人开始废掉的3种迹象一个人开始废掉的3种迹象一个人开始废掉的3种迹象一个人开始废掉的3种迹象</a>
+							</div>
+							<div class="pa-a">
+								<span>05</span>   <a href="#">一个人开始废掉的3种迹象一个人开始废掉的3种迹象一个人开始废掉的3种迹象一个人开始废掉的3种迹象</a>
+							</div>
+							<div class="pa-a">
+								<span>06</span>   <a href="#">一个人开始废掉的3种迹象一个人开始废掉的3种迹象一个人开始废掉的3种迹象一个人开始废掉的3种迹象</a>
+							</div>
+							<div class="pa-a">
+								<span>07</span>   <a href="#">一个人开始废掉的3种迹象一个人开始废掉的3种迹象一个人开始废掉的3种迹象一个人开始废掉的3种迹象</a>
+							</div>
+							<div class="pa-a">
+								<span>08</span>   <a href="#">一个人开始废掉的3种迹象一个人开始废掉的3种迹象一个人开始废掉的3种迹象一个人开始废掉的3种迹象</a>
+							</div>
+							<div class="pa-a">
+								<span>09</span>   <a href="#">一个人开始废掉的3种迹象一个人开始废掉的3种迹象一个人开始废掉的3种迹象一个人开始废掉的3种迹象</a>
+							</div>
+							<div class="pa-a">
+								<span>10</span>   <a href="#">一个人开始废掉的3种迹象一个人开始废掉的3种迹象一个人开始废掉的3种迹象一个人开始废掉的3种迹象</a>
+							</div>
+			            </div>
+					</div>
+				</div>
+				<div class="re-bt">
+					<h3>热搜榜</h3>
+				</div>
+				<div class="re-s">
+					<!-- 云标签代码开始 --> 
+					<div id="rotate">
+						<a href="#" target="_blank">起名取名</a>
+						<a href="#" target="_blank">宣传策划</a>
+						<a href="#" target="_blank">网游试玩</a>
+						<a href="#" target="_blank">短信表白</a>
+						<a href="#" target="_blank">卡片设计</a>
+						<a href="#" target="_blank">网页设计</a>
+						<a href="#" target="_blank">SEO优化</a>
+						<a href="#" target="_blank">外语翻译</a>
+						<a href="#" target="_blank">产品推广</a>
+						<a href="#" target="_blank">网络营销</a>
+						<a href="#" target="_blank">动漫设计</a>
+						<a href="#" target="_blank">招聘求职</a>
+						<a href="#" target="_blank">家居装修</a>
+						<a href="#" target="_blank">影视创作</a>
+						<a href="#" target="_blank">照片美化</a>
+						<a href="#" target="_blank">产品设计</a>
+						<a href="#" target="_blank">包装设计</a>
+						<a href="#" target="_blank">Logo设计</a>
+						<a href="#" target="_blank">海报设计</a>
+						<a href="#" target="_blank">程序开发</a>
+						<a href="#" target="_blank">网店推广</a>
+						<a href="#" target="_blank">微博营销</a>
+						<a href="#" target="_blank">网站开发</a>
+						<a href="#" target="_blank">宣传品设计</a>
+						<a href="#" target="_blank">配音配词</a>
+						<a href="#" target="_blank">产品推广</a>
+						<a href="#" target="_blank">网络营销</a>
+						<a href="#" target="_blank">动漫设计</a>
+						<a href="#" target="_blank">招聘求职</a>
+						<a href="#" target="_blank">家居装修</a>
+						<a href="#" target="_blank">影视创作</a>
+						<a href="#" target="_blank">照片美化</a>
+					</div>
+					<!-- 代码结束 -->
+				</div>
+				<img style="margin: 25px auto;" src="img/xy_8.jpg " alt="" />
+				<div class="re-bt">
+					<h3>热门专题</h3>
+				</div>
+				<div class="zt-img">
+					<a href="#"><img src="img/xy_7.jpg"/></a>
+					<h4><a href="#">APP推广最全实操指南</a></h4>
+					<p class="zt-p">鸟哥笔记独家整理ASO优化、渠道推广、APP营、渠道推广、渠道推广</p>
+					<p class="zt-pa">31篇文章   2570人已学习</p>
+				</div>
+				<div class="zt-img">
+					<a href="#"><img src="img/xy_9.jpg"/></a>
+					<h4><a href="#">APP推广最全实操指南</a></h4>
+					<p class="zt-p">鸟哥笔记独家整理ASO优化、渠道推广、APP营、渠道推广、渠道推广</p>
+					<p class="zt-pa">31篇文章   2570人已学习</p>
+				</div>
+				<div class="zt-img">
+					<a href="#"><img src="img/xy_12.jpg"/></a>
+					<h4><a href="#">APP推广最全实操指南</a></h4>
+					<p class="zt-p">鸟哥笔记独家整理ASO优化、渠道推广、APP营、渠道推广、渠道推广</p>
+					<p class="zt-pa">31篇文章   2570人已学习</p>
+				</div>
+			</div>
+		</div>
+		<!--底部-->
+		<div class="footer_box margin-b-0">
+			<div class="footer_top">
+				<div class="max_wh row">
+					<div class="footer_nav col-lg-6">
+						<div class="col-lg-3">
+							<p class="margin-b-20 color-fff font-size-18 fweight-700">相关产品</p>
+							<p><a href="#">搜索</a><a href="">新闻</a></p>
+							<p><a href="#">自媒体营销</a></p>
+							<p><a href="#">口碑</a><a href="#">广告</a></p>
+							<p><a href="#">综合产品</a></p>
+						</div>
+						<div class="col-lg-3">
+							<p class="margin-b-20 color-fff font-size-18 fweight-700">相关服务</p>
+							<p><a href="#">营销学院</a></p>
+							<p><a href="#">营销导航</a></p>
+							<p><a href="#">城市拍档</a></p>
+						</div>
+						<div class="col-lg-3">
+							<p class="margin-b-20 color-fff font-size-18 fweight-700">关于我们</p>
+							<p><a href="#">公司简介</a></p>
+							<p><a href="#">联系我们</a></p>
+						</div>
+						<div class="col-lg-3">
+							<p class="margin-b-20 color-fff font-size-18 fweight-700">新手教程</p>
+							<p><a href="#">常见问题</a></p>
+							<p><a href="#">网站地图</a></p>
+							<p><a href="#">会员介绍</a></p>
+						</div>
+					</div>
+					<div class="col-lg-6 color-fff">
+						<div class="float_lf margin-t-10">
+							<img src="img/ic-25.png"/>
+							<p class="text-center font-14 margin-t-10">扫一扫关注我们</p>
+						</div>
+						<div class="float_lf margin-t-10 mar-lf-20">
+							<img src="img/weibo.png"/>
+							<p class="text-center font-14 margin-t-10">扫一扫关注我们</p>
+						</div>
+						<div class="float_rt margin-t-10 text-left">
+							<p class="margin-t-30 font-16">
+								<img style="margin-top: -3px;" class="display-inline" src="img/kefu_tel.png"/>
+								<span>全国客服热线</span>
+							</p>
+							<p class="fweight-700 font-size-26 margin-t-5" style="color:#ff6401;">4006-685-611</p>
+							<p class="font-16" style="margin-top: 15px;">每日  09:00～18:00</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer_bottom">
+				<div class="friendly_link border-bottom-1 text-center">
+					<ul class="clearfix">
+						<li>友情链接：</li>
+						<li><a href="#">营销导航</a></li>
+						<li><a href="">营销学院</a></li>
+						<li><a href="">融合网</a></li>
+						<li><a href="">乐上网</a></li>
+						<li><a href="">智阅网</a></li>
+						<li><a href="">软文发布</a></li>
+						<li><a href="">自媒体营销</a></li>
+						<li><a href="">广告投放</a></li>
+						<li><a href="">小油菜</a></li>
+						<li><a href="">变色龙</a></li>
+						<li><a href="">企划邦</a></li>
+						<li><a href="">流媒体网</a></li>
+					</ul>
+				</div>
+				<div class="gf_rz text-center padding-20">
+					<p class="color-666 font-14">Copyright 2005-2016 meijiexia.com 冀ICP备16001322号</p>
+					<img src="img/rz_img1.png"/>
+					<img src="img/rz_img2.png"/>
+					<img src="img/rz_img3.png"/>
+					<img src="img/rz_img4.png"/>
+					<img src="img/rz_img5.png"/>
+					<img src="img/rz_img6.png"/>
+				</div>
+			</div>
+		</div>
+		<!--返回顶部开始-->
+		<div id="code"></div>
+		<div id="code_img"></div>
+		<a id="gotop" href="javascript:void(0)"><img src="img/top.png" alt=""/></a>
+		<script type="text/javascript">
+		    function b(){
+		        h = $(window).height();
+		        t = $(document).scrollTop();
+		        if(t > h){
+		            $('#gotop').show();
+		        }else{
+		            $('#gotop').hide();
+		        }
+		    }
+		    $(document).ready(function(e) {
+		
+		        b();
+		
+		        $('#gotop').click(function(){
+		            $(document).scrollTop(0);
+		        });
+		
+		        $('#code').hover(function(){
+		            $(this).attr('id','code_hover');
+		            $('#code_img').show();
+		            $('#code_img').addClass('a-fadeinL');
+		        },function(){
+		            $(this).attr('id','code');
+		            $('#code_img').hide();
+		        })
+		
+		    });
+		
+		    $(window).scroll(function(e){
+		        b();
+		    });
+		</script>
+		<!--顶部搜索-->
+		<script type="text/javascript">
+			$(".search_box a").click(function(){
+				$(".search_alert").show();
+				$(".del_search").show();
+				$(".search_a").hide();
+				$(".nav_ul").hide();
+				$(".search_inp input").focus();
+			});
+			$(".del_search a").click(function(){
+				$(".search_alert").hide();
+				$(".del_search").hide();
+				$(".search_a").show();
+				$(".nav_ul").show();
+			});
+			
+			$(".empty_btn").click(function(){
+				$(this).parent().siblings("ul").empty();
+			});
+			//点击历史标签搜索
+			$(".hot_search ul li a").click(function(){
+				var txts = $(this).text();
+				$(".search_inp input").val(txts);
+			});
+		</script>
+	</body>
+</html>
