@@ -45,7 +45,7 @@ table {
 	min-height: 100px;
 	height: auto;
 	overflow: auto;
-	margin: 0 auto 50px;
+	margin: 80px auto 50px;
 }
 .xy-con .xy-conl{
 	width:812px;
@@ -1839,7 +1839,7 @@ p.ppl-p{
 
 /* 营销学院-我要投稿 */
 .yxxyContainer{
-	padding-top: 120px;
+	padding-top: 90px;
 	background-color: #f8f8f8;
 }
 .yxxyContainer .inner{
