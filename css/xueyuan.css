@@ -205,11 +205,30 @@ table {
 .xy-list .xy-listr .xy-a .xy-b img{
 	float: left;
 }
+.xy-list .xy-listr .xy-a .xy-b .icon_zan{
+	height: 15px;
+	margin: 4px 5px 0 0;
+}
 .xy-list .xy-listr .xy-a .xy-b p{
 	float: left;
 	margin-top: 0;
 	height: 20px;
 	padding-right: 15px;
+}
+.xy-list .xy-listr .xy-a .xy-b > div{
+	display: inline-block;
+	background: no-repeat left center;
+	background-size: 20px auto;
+	padding-left: 24px;
+	vertical-align: middle;
+}
+.xy-list .xy-listr .xy-a .xy-b .looks{
+	background-image: url(../img/eye.png);
+}
+.xy-list .xy-listr .xy-a .xy-b .support{
+	background-image: url(../img/icon_zan.png);
+	background-position: 5px 7px;
+	background-size: auto 15px;
 }
 img.xy-img{
 	width: 100%;
@@ -217,7 +236,6 @@ img.xy-img{
 	margin: 30px auto;
 }
 .xx-more{
-	width:812px;
 	height: 60px;
 	line-height: 60px;
 	text-align: center;
@@ -269,6 +287,7 @@ img.xy-img{
 	padding: 20px;
 	padding-bottom: 5px;
 	background-color: #fff;
+	margin-bottom: 15px;
 }
 .phb-top .top-title{
 	border-bottom:1px solid #eb6317;
@@ -348,17 +367,50 @@ img.xy-img{
 	background: #f8f9f9;
 	padding:50px 0 50px;
 }
+.hotSearch,
 .hotSubject{
 	padding: 20px;
 	padding-top: 30px;
 	background-color: #fff;
+	margin-bottom: 15px;
+	padding: 20px;
+	padding-top: 30px;
+	background-color: #fff;
+	margin-bottom: 15px;
 }
+.hotTitle{
+	padding-bottom: 15px;
+	border-bottom: 1px solid #e5e5e5;
+	margin-bottom: 20px;
+}
+.hotTitle h3,
 .re-bt h3{
 	font-size: 18px;
 	color: #000;
 	font-weight: normal;
 	padding-left: 5px; 
 	border-left: 2px solid #EB6317;
+}
+.hotKeyWords{
+	overflow: hidden;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.hotKeyWords .hotItem{
+	width: 30%;
+	line-height: 32px;
+	margin-bottom: 10px;
+	border: 1px solid #cccccc;
+	border-radius: 100px;
+	font-size: 14px;
+	color: #666666;
+	padding: 0 10px;
+	box-sizing: border-box;
+	text-align: center;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
 }
 #tagbox{
 	position:relative;
