@@ -21,6 +21,7 @@ main, nav, header, footer, section, article, aside, dialog, figure, menu ,img{
 /*清除浮动*/
 .clearfix:after{content:"";display:block;height:0;clear:both;}
 .clearfix{zoom: 1;height: auto}
+
 /**************************公共样式****************************/
 .color-fff{
 	color:#fff;

@@ -30,7 +30,6 @@ table {
     white-space:nowrap;
     -webkit-box-orient: vertical;
 }
-
 .owl-pagination{position:absolute;right:0;bottom:10px;width:40%;height:22px;text-align:right;}
 .owl-page{display:inline-block;width:8px;height:8px;margin:0 5px;background-image: url(../img/02.png);*display:inline;*zoom:1;}
 .owl-pagination .active{width:20px; height:8px; background-image:url(../img/01.png);}
