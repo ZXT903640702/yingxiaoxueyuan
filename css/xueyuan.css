@@ -45,7 +45,7 @@ table {
 	min-height: 100px;
 	height: auto;
 	overflow: auto;
-	margin: 80px auto 50px;
+	margin: 90px auto 50px;
 }
 .xy-con .xy-conl{
 	width:812px;
@@ -53,7 +53,7 @@ table {
 	height: auto;
 	overflow: hidden;
 	float: left;
-	margin-top: 20px;
+	/*margin-top: 20px;*/
 }
 .xy-con.case-list .xy-conl{
 	margin-top: 0;
@@ -282,7 +282,7 @@ img.xy-img{
 	overflow: hidden;
 	border-bottom: 1px solid #e5e5e5;
 	border-top: 1px solid #e5e5e5;
-	margin-top: 20px;
+	margin-top: 11px;
 	position: relative;
 	padding: 20px;
 	padding-bottom: 5px;
@@ -341,7 +341,7 @@ img.xy-img{
 }
 .pa-a{
 	line-height: 1;
-	margin-bottom: 31px;
+	margin-bottom: 25px;
 	overflow: hidden;
 	-o-text-overflow: ellipsis;
     text-overflow: ellipsis;
@@ -392,15 +392,18 @@ img.xy-img{
 	border-left: 2px solid #EB6317;
 }
 .hotKeyWords{
-	overflow: hidden;
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
+	/*overflow: hidden;*/
+	/*display: flex;*/
+	/*justify-content: space-between;*/
+	/*flex-wrap: wrap;*/
 }
 .hotKeyWords .hotItem{
-	width: 30%;
-	line-height: 32px;
+	width: auto;
+	display: block;
+	float: left;
+	line-height: 30px;
 	margin-bottom: 10px;
+	margin-right: 10px;
 	border: 1px solid #cccccc;
 	border-radius: 100px;
 	font-size: 14px;
@@ -411,6 +414,10 @@ img.xy-img{
 	overflow: hidden;
 	text-overflow: ellipsis;
 	white-space: nowrap;
+}
+.hotKeyWords .hotItem:hover{
+	color:#ff6400;
+	border:1px solid #ff6400;
 }
 #tagbox{
 	position:relative;
