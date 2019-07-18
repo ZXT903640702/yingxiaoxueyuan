@@ -36,6 +36,19 @@
 		<script type="text/javascript" src="js/owl.carousel.js"></script>
 	</head>
 	<body>
+	<!--顶部小导航-->
+	<div class="topHeader">
+		<div class="max_wh clearfix">
+			<ul class="clearfix float_rt">
+				<li><a href="#">媒介匣商城</a></li>
+				<li><a href="#">新闻资讯</a></li>
+				<li><a href="#">展业助手</a></li>
+				<li><a href="#">轻松赚</a></li>
+				<li><a href="#">营销导航</a></li>
+			</ul>
+		</div>
+	</div>
+
 	<!--顶部导航-->
 	<div class="header_box">
 		<div class="max_wh row">
@@ -98,11 +111,18 @@
 				</li>
 				<li><a href="#">资料下载</a></li>
 			</ul>
+
+			<a href="#" class="tgBtn float_rt">投稿</a>
+
+			<div class="searchBtns float_rt">
+				<p>请输入搜索内容</p>
+			</div>
 			<!--搜索弹框-->
-			<div class="search_alert float_lf" style="display: none;">
-				<form class="search_inp">
+			<div class="search_alert float_rt" style="display: none;">
+				<form class="search_inp clearfix">
 					<input class="float_lf" type="search" name="" value="" placeholder="请输入关键词进行搜索"/>
-					<button class="search_btn float_lf" href="#"><img src="img/s_search.png"/></button>
+					<button class="search_btn float_lf" type="submit"><img src="img/s_search.png"/></button>
+					<button class="search_btn search_dels float_lf" type="button"><img src="img/del_search.png"/></button>
 				</form>
 				<div class="hot_history">
 					<!--热门搜索-->
@@ -134,45 +154,50 @@
 					</div>
 				</div>
 			</div>
-			<div class="search_tel float_rt">
-				<div class="search_box search_a  float_lf">
-					<a href="#">
-						<span class="float_lf">|</span>
-						<img class="float_lf" src="img/s_search.png"/>
-						<span class="float_lf">|</span>
-					</a>
-				</div>
-				<div class="search_box del_search float_lf" style="display: none;">
-					<a href="#" class="clearfix">
-						<span class="float_lf">|</span>
-						<img class="float_lf" src="img/del_search.png"/>
-						<span class="float_lf">|</span>
-					</a>
-				</div>
-				<div class="com_tel clearfix">
-					<div class="mid_box">
-						<!--未登录状态-->
-						<div class="clearfix">
-							<a href="#" class="login">登录</a>
-							<a href="#" class="register">注册</a>
-						</div>
 
-						<!--投稿按钮-->
-						<!--<div class="tou_gao clearfix">-->
-						<!--<a href="#">投稿</a>-->
-						<!--</div>-->
 
-						<!--已登录状态-->
-						<!--<div class="logined clearfix">
-                            <a href="#" class="float_lf"><img src="img/user_img.png"/></a>
-                            <a href="#" class="float_lf txt-num1 margin-t-10 margin-l-10">名称名称名称名称</a>
-                        </div>-->
-					</div>
-				</div>
-			</div>
+
+
+			<!--<div class="search_tel float_rt">-->
+			<!--<div class="search_box search_a  float_lf">-->
+			<!--<a href="#">-->
+			<!--<span class="float_lf">|</span>-->
+			<!--<img class="float_lf" src="img/s_search.png"/>-->
+			<!--<span class="float_lf">|</span>-->
+			<!--</a>-->
+			<!--</div>-->
+			<!--<div class="search_box del_search float_lf" style="display: none;">-->
+			<!--<a href="#" class="clearfix">-->
+			<!--<span class="float_lf">|</span>-->
+			<!--<img class="float_lf" src="img/del_search.png"/>-->
+			<!--<span class="float_lf">|</span>-->
+			<!--</a>-->
+			<!--</div>-->
+			<!--<div class="com_tel clearfix">-->
+			<!--<div class="mid_box">-->
+			<!--&lt;!&ndash;未登录状态&ndash;&gt;-->
+			<!--&lt;!&ndash;<div class="clearfix">&ndash;&gt;-->
+			<!--&lt;!&ndash;<a href="#" class="login">登录</a>&ndash;&gt;-->
+			<!--&lt;!&ndash;<a href="#" class="register">注册</a>&ndash;&gt;-->
+			<!--&lt;!&ndash;</div>&ndash;&gt;-->
+
+			<!--&lt;!&ndash;投稿按钮&ndash;&gt;-->
+			<!--<div class="tou_gao clearfix">-->
+			<!--<a href="#">投稿</a>-->
+			<!--</div>-->
+
+			<!--&lt;!&ndash;已登录状态&ndash;&gt;-->
+			<!--&lt;!&ndash;<div class="logined clearfix">-->
+			<!--<a href="#" class="float_lf"><img src="img/user_img.png"/></a>-->
+			<!--<a href="#" class="float_lf txt-num1 margin-t-10 margin-l-10">名称名称名称名称</a>-->
+			<!--</div>&ndash;&gt;-->
+			<!--</div>-->
+			<!--</div>-->
+			<!--</div>-->
 		</div>
 	</div>
-		<div class="xy-con case-list">
+
+	<div class="xy-con case-list">
 			<div class="xy-conl">
 				<div class="xy-conld">
 					<div class="list-tab">

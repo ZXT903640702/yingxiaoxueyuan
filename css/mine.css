@@ -1136,4 +1136,135 @@ a{text-decoration: none;}
 	}
 }
 
+/******************7.18*******************/
+
+.topHeader{
+	position: fixed;
+	top:0;
+	left: 0;
+	z-index: 100;
+	width: 100%;
+	height: 30px;
+	background: rgba(47,50,53,1);
+}
+.topHeader .minLogo a{
+	display: block;
+	margin-top: 5px;
+}
+.topHeader .minLogo a img{
+	height: 20px;
+}
+.topHeader ul{
+	display: block;
+}
+.topHeader ul li{
+	float: left;
+	margin-right: 30px;
+}
+.topHeader ul li a{
+	display: block;
+	color:#fff;
+	font-size: 12px;
+	height: 30px;
+	line-height: 30px;
+}
+.topHeader ul li a:hover{
+	color:#ff6400;
+}
+.header_box{
+	top:30px;
+	box-shadow: 0 0 5px 3px rgba(0,0,0,0.1);
+}
+.header_box,
+.header_box .logo_box a,
+.header_box .nav_ul li>a,
+.header_box .search_tel .search_box a,
+.header_box .search_tel .com_tel .mid_box{
+	height: 55px;
+}
+.header_box .logo_box{
+	width: auto;
+}
+.header_box .logo_box a img{
+	width: auto;
+	height: 30px;
+}
+.header_box .nav_ul li>a{
+	line-height: 55px;
+}
+.header_box .nav_ul li>a p img {
+	margin: 20px 0 0 5px;
+}
+.down_list{
+	top:55px;
+}
+.header_box .search_tel .com_tel .mid_box div{
+	padding-top: 13px;
+}
+.header_box .nav_ul{
+	margin-left: 30px;
+}
+.header_box .nav_ul li>a{
+	padding: 0 16px;
+}
+.header_box .search_tel{
+	width: auto;
+}
+
+.searchBtns{
+	cursor: pointer;
+	display: inline-block;
+	vertical-align: top;
+	width: 245px;
+	height: 40px;
+	margin-top: 8px;
+	background: rgba(247,247,247,1);
+	border-radius: 20px;
+	background-image: url('img/s_search.png');
+	background-repeat: no-repeat;
+	background-position-x: 208px;
+	background-position-y: center;
+}
+.searchBtns p{
+	color:#666;
+	line-height: 40px;
+	padding-left: 20px;
+}
+.tgBtn{
+	width: 90px;
+	height: 36px;
+	color:#ff6400;
+	text-align: center;
+	display: block;
+	line-height: 36px;
+	border-radius: 18px;
+	border:1px solid #ff6400;
+	margin: 10px 0 0 30px;
+}
+.search_alert,
+.search_inp{
+	width: 694px;
+}
+.search_inp{
+	height: 55px;
+}
+.search_inp input{
+	width: 610px;
+}
+.xy-con{
+	margin: 100px auto 50px !important;
+}
+.phb-top,.xy-con .xy-conl{
+	margin-top: 0 !important;
+}
+.yxxyContainer{
+	padding-top: 100px !important;
+}
+
+
+
+
+
+
+
 
